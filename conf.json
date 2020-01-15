@@ -3,8 +3,8 @@
     "weights"         : "imagenet",
     "include_top"     : false,
   
-    "train_path"      : "C:\\Users\\Snooty7\\Desktop\\BrawStarsProject\\pygta5-master\\pygta5-master\\train",
-    "test_path"       : "C:\\Users\\Snooty7\\Desktop\\BrawStarsProject\\pygta5-master\\pygta5-master\\test",
+    "train_path"      : "C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train",
+    "test_path"       : "C:\\Users\\Snooty7\\Desktop\\BrawlStars\\test",
     "features_path"   : "features.h5",
     "labels_path"     : "labels.h5",
     "results"         : "results.txt",
