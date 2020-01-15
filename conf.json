@@ -1,0 +1,17 @@
+{
+    "model"           : "inceptionv3",
+    "weights"         : "imagenet",
+    "include_top"     : false,
+  
+    "train_path"      : "C:\\Users\\Snooty7\\Desktop\\BrawStarsProject\\pygta5-master\\pygta5-master\\train",
+    "test_path"       : "C:\\Users\\Snooty7\\Desktop\\BrawStarsProject\\pygta5-master\\pygta5-master\\test",
+    "features_path"   : "features.h5",
+    "labels_path"     : "labels.h5",
+    "results"         : "results.txt",
+    "classifier_path" : "classifier.pickle",
+    "model_path"      : "model",
+  
+    "test_size"       : 0.10,
+    "seed"            : 9,
+    "num_classes"     : 9
+  }
