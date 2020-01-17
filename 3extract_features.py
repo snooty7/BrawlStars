@@ -129,11 +129,6 @@ h5f_label.create_dataset('dataset_1', data=np.array(le_labels))
 h5f_data.close()
 h5f_label.close()
 
-# save model and weights
-model_json = model.to_json()
-with open(model_path + str(test_size) + ".json", "w") as json_file:
-  json_file.write(model_json)
-
 # save weights
 model.save_weights(model_path + str(test_size) + ".h5")
 print("[STATUS] saved model and weights to disk..")

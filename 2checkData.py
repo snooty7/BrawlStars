@@ -16,31 +16,31 @@ for data in train_data:
     cv2.imshow('test', img)
     print(choice)
     if choice == [1,0,0,0,0,0,0,0,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\straight\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\straight\\{}.jpg'.format(i),img)
         i+=1
     if choice == [0,1,0,0,0,0,0,0,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\reverse\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\reverse\\{}.jpg'.format(i),img)
         i+=1
     if choice == [0,0,1,0,0,0,0,0,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\left\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\left\\{}.jpg'.format(i),img)
         i+=1
     if choice == [0,0,0,1,0,0,0,0,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\right\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\right\\{}.jpg'.format(i),img)
         i+=1 
     if choice == [0,0,0,0,1,0,0,0,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\forward+left\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\forward+left\\{}.jpg'.format(i),img)
         i+=1 
     if choice == [0,0,0,0,0,1,0,0,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\forward+right\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\forward+right\\{}.jpg'.format(i),img)
         i+=1   
     if choice == [0,0,0,0,0,0,1,0,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\reverse+left\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\reverse+left\\{}.jpg'.format(i),img)
         i+=1   
     if choice == [0,0,0,0,0,0,0,1,0]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\reverse+right\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\reverse+right\\{}.jpg'.format(i),img)
         i+=1    
     if choice == [0,0,0,0,0,0,0,0,1]:
-        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\nokeys\\{}.jpg'.format(i),img)
+        cv2.imwrite('C:\\Users\\Snooty7\\Desktop\\BrawlStars\\train\\nokeys\\{}.jpg'.format(i),img)
         i+=1                                        
     if cv2.waitKey(25) & 0xFF == ord('q'):
         cv2.destroyAllWindows()

@@ -1,9 +1,3 @@
-# test script to preform prediction on test images inside 
-# dataset/test/
-#   -- image_1.jpg
-#   -- image_2.jpg
-#   ...
-
 # organize imports
 from __future__ import print_function
 
@@ -50,34 +44,9 @@ classifier_path = config["classifier_path"]
 print ("[INFO] loading the classifier...")
 classifier = pickle.load(open(classifier_path, 'rb'))
 
-# pretrained models needed to perform feature extraction on test data too!
-if model_name == "vgg16":
-	base_model = VGG16(weights=weights)
-	model = Model(input=base_model.input, output=base_model.get_layer('fc1').output)
-	image_size = (224, 224)
-elif model_name == "vgg19":
-	base_model = VGG19(weights=weights)
-	model = Model(input=base_model.input, output=base_model.get_layer('fc1').output)
-	image_size = (224, 224)
-elif model_name == "resnet50":
-	base_model = ResNet50(weights=weights)
-	model = Model(input=base_model.input, output=base_model.get_layer('flatten').output)
-	image_size = (224, 224)
-elif model_name == "inceptionv3":
+if model_name == "inceptionv3":
 	base_model = InceptionV3(include_top=include_top, weights=weights, input_tensor=Input(shape=(299,299,3)))
 	model = Model(input=base_model.input, output=base_model.layers[-1].output)
-	image_size = (299, 299)
-elif model_name == "inceptionresnetv2":
-	base_model = InceptionResNetV2(include_top=include_top, weights=weights, input_tensor=Input(shape=(299,299,3)))
-	model = Model(input=base_model.input, output=base_model.get_layer('custom').output)
-	image_size = (299, 299)
-elif model_name == "mobilenet":
-	base_model = MobileNet(include_top=include_top, weights=weights, input_tensor=Input(shape=(224,224,3)), input_shape=(224,224,3))
-	model = Model(input=base_model.input, output=base_model.get_layer('custom').output)
-	image_size = (224, 224)
-elif model_name == "xception":
-	base_model = Xception(weights=weights)
-	model = Model(input=base_model.input, output=base_model.get_layer('avg_pool').output)
 	image_size = (299, 299)
 else:
 	base_model = None
@@ -101,9 +70,9 @@ for image_path in test_images:
 	preds 		= classifier.predict(flat)
 	prediction 	= train_labels[preds[0]]	
 	# perform prediction on test image
-	print ("I think it is a now " + train_labels[preds[0]])
+	print ("Move " + train_labels[preds[0]])
 	img_color = cv2.imread(path, 1)
-	cv2.putText(img_color, "I think it is a bla " + prediction, (140,445), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
+	cv2.putText(img_color, "Move to " + prediction, (140,445), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
 	cv2.imshow("test", img_color)
 
 	# key tracker
