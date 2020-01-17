@@ -4,7 +4,6 @@ from __future__ import print_function
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
 import numpy as np
 import h5py
 import os
@@ -71,18 +70,6 @@ for (label, features) in zip(testLabels, testData):
   # take the top-5 class labels
   predictions = model.predict_proba(np.atleast_2d(features))[0]
   predictions = np.argsort(predictions)[::-1][:5]
-
-  # rank-1 prediction increment
-  if label == predictions[0]:
-    rank_1 += 1
-
-  # rank-5 prediction increment
-  if label in predictions:
-    rank_5 += 1
-
-# convert accuracies to percentages
-rank_1 = (rank_1 / float(len(testLabels))) * 100
-rank_5 = (rank_5 / float(len(testLabels))) * 100
 
 # evaluate the model of test data
 preds = model.predict(testData)
