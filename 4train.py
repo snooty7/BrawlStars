@@ -22,7 +22,6 @@ test_size     = config["test_size"]
 seed      = config["seed"]
 features_path   = config["features_path"]
 labels_path   = config["labels_path"]
-results     = config["results"]
 classifier_path = config["classifier_path"]
 train_path    = config["train_path"]
 num_classes   = config["num_classes"]
@@ -65,9 +64,6 @@ model.fit(trainData, trainLabels)
 
 # use rank-1 and rank-5 predictions
 print("[INFO] evaluating model...")
-f = open(results, "w")
-rank_1 = 0
-rank_5 = 0
 
 # loop over test data
 for (label, features) in zip(testLabels, testData):
@@ -88,16 +84,8 @@ for (label, features) in zip(testLabels, testData):
 rank_1 = (rank_1 / float(len(testLabels))) * 100
 rank_5 = (rank_5 / float(len(testLabels))) * 100
 
-# write the accuracies to file
-f.write("Rank-1: {:.2f}%\n".format(rank_1))
-f.write("Rank-5: {:.2f}%\n\n".format(rank_5))
-
 # evaluate the model of test data
 preds = model.predict(testData)
-
-# write the classification report to file
-f.write("{}\n".format(classification_report(testLabels, preds)))
-f.close()
 
 # dump classifier to file
 print("[INFO] saving model...")
@@ -108,10 +96,3 @@ print("[INFO] confusion matrix")
 
 # get the list of training lables
 labels = sorted(list(os.listdir(train_path)))
-
-# plot the confusion matrix
-cm = confusion_matrix(testLabels, preds)
-sns.heatmap(cm,
-            annot=True,
-            cmap="Set2")
-plt.show()
