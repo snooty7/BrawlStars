@@ -45,7 +45,7 @@ https://www.starlist.pro/maps/
 
 The final step is to start in parallel **'5test_model.py'** and the game. After the game finished just stop the script ctrl+c. For the moment you need to start the script every time manually, but with some additional adjustment there is a way to make everything automatically.
 
-The results as i tested are 7 wins from 10 games in Gem Grab mode.
+:ballot_box_with_check: The results as i tested are 7 wins from 10 games in Gem Grab mode.
 
 Enjoy your play and modify as much as you want. :shipit:
 
