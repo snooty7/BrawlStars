@@ -28,7 +28,7 @@ If you are not sure about the size of the window you can always install an appli
 
 Install Brawl Stars on Nox and then start the game. You can use your account from google play if you want to. Do not play yet. 
 The python files which we are going to use are named with a digits at the begining. 
-The first file is 1collect_data.py
+The first file is :exclamation: **1collect_data.py**
 You need to start it in the console(comand prompt) and immediately after that you need to start the game. The main purpose of this script is to collect your movements while you are playing the game. The script capture frames from your screen in 800x600px and keystrokes. Don't worry if the script starts and the game is still loading. We can clear the bad frames after that. The script will collect exactly 3000 frames with the following directions: straight, left, right, reverse, forward+left, forward+right, reverse+left, reverse+right and nokeys. 
 
 After the game is over stop the script with key combination ctrl+c. Then you will see a new generated file :exclamation: **'training_data-1.npy'** which contains everything needed to continue.
