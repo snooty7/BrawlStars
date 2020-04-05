@@ -9,6 +9,7 @@ This is an autonomous bot, which can navigate in Brawl Star map and shoots every
 
 This bot is created in base of Sentdex tutorials from this links:
  https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/
+ 
  https://github.com/sentdex/pygta5
 
 To use this script you need to have instaled Python version 3.7.4!!!!!! I've try it with newer versions and there was a problem with pywinauto module.
