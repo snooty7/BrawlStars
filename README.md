@@ -41,7 +41,7 @@ After this start file :exclamation: **'3extract_features.py'**. This way we are 
 Next start file :exclamation: **'4train.py'**. This script will create a file :exclamation: **'model0.1.h5'** which is the model that we are going to use in the game. You need model for each map in Brawl Stars. At the time of writing there are 14 maps for Gem Grab mode in Brawl Stars. 
 You can check them from here:
 
-https://www.starlist.pro/maps/
+https://www.starlist.pro/maps/ :movie_camera:
 
 The final step is to start in parallel **'5test_model.py'** and the game. After the game finished just stop the script ctrl+c. For the moment you need to start the script every time manually, but with some additional adjustment there is a way to make everything automatically.
 
