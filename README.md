@@ -8,9 +8,10 @@ How does this script works?
 This is an autonomous bot, which can navigate in Brawl Star map and shoots every 2 seconds. In order to use it correctly you need to 'teach' it how to move. So if you are a good player the results will be victories. In simple words the script will "watch" you playing the game. Then you will create an model using Python 3.7.4. This model will contain everything needed for the game. Remember that you are going to need a separate model for each map on Brawl Stars!!! The models are created only once then you can use them as much as you want.
 
 This bot is created in base of Sentdex tutorials from this links:
- https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/
  
- https://github.com/sentdex/pygta5
+https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/
+ 
+https://github.com/sentdex/pygta5
 
 To use this script you need to have instaled Python version 3.7.4!!!!!! I've try it with newer versions and there was a problem with pywinauto module.
 There is a "requirements" file which can be installed with the following command : pip install -r requirements.txt
