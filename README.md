@@ -36,7 +36,7 @@ After the game is over stop the script with key combination ctrl+c. Then you wil
 Next step is to start from console :exclamation: **'2checkData.py'**. It will separate each frame depending of the move that you made while you played and then the frame will be saved in folder 'train'. For example all the 'left' movements goes to 'train\left' and  all the 'right' movements goes to 'train\right' and so on.
 Then we need to examine each folder for 'bad'(damaged) frames and reduce the number of frames to be equal in each folder. This way the future model won't be overfitted.
 
-After this start file :exclamation: **'3extract_features.py'**. This way we are going to extract the features we need in base of the inceptionv3 model. 
+After this start file :exclamation: **'3extract_features.py'**. This way we are going to extract the features we need in base of the inceptionv3 model. It will take time. Be patient.
 
 Next start file :exclamation: **'4train.py'**. This script will create a file :exclamation: **'model0.1.h5'** which is the model that we are going to use in the game. You need a model for each map in Brawl Stars. At the time of writing there are 14 maps for Gem Grab mode in Brawl Stars. 
 You can check them from here:
