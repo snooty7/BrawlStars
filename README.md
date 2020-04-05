@@ -49,7 +49,7 @@ The final step is to start in parallel **'5test_model.py'** and the game. After 
 
 Enjoy your play and modify as much as you want. :shipit:
 
-P.S. There is a way to improve this script to be more presize in shooting and coordinate.
+P.S. There is a way to improve this script to be more presize in shooting and coordinate moving :sparkles:
 
 
 
