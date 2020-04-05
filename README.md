@@ -1,7 +1,7 @@
 # BrawlStars
 Convolutional Neural Network bot for navigating in Brawl Stars Android Game.
 
-There will be a youtube tutorial soon i promise. :)
+There will be a youtube tutorial soon i promise. :bowtie:
 
 How does this script works?
 
@@ -47,7 +47,7 @@ The final step is to start in parallel **'5test_model.py'** and the game. After 
 
 The results as i tested are 7 wins from 10 games in Gem Grab mode.
 
-Enjoy your play and modify as much as you want.
+Enjoy your play and modify as much as you want. :shipit:
 
 P.S. There is a way to improve this script to be more presize in shooting and coordinate.
 
