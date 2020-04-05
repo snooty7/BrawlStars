@@ -38,7 +38,7 @@ Then we need to examine each folder for 'bad'(damaged) frames and reduce the num
 
 After this start file :exclamation: **'3extract_features.py'**. This way we are going to extract the features we need in base of the inceptionv3 model. 
 
-Next start file :exclamation: **'4train.py'**. This script will create a file :exclamation: **'model0.1.h5'** which is the model that we are going to use in the game. You need model for each map in Brawl Stars. At the time of writing there are 14 maps for Gem Grab mode in Brawl Stars. 
+Next start file :exclamation: **'4train.py'**. This script will create a file :exclamation: **'model0.1.h5'** which is the model that we are going to use in the game. You need a model for each map in Brawl Stars. At the time of writing there are 14 maps for Gem Grab mode in Brawl Stars. 
 You can check them from here:
 
 https://www.starlist.pro/maps/ :movie_camera:
